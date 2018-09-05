@@ -1,0 +1,323 @@
+.container {
+  margin: 0 auto;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: #FFFFFF;
+  width: 100%;
+  top: 0;
+  box-shadow: 0 8px 6px -6px grey;
+  }
+#header-img {
+  width: 70px;
+  padding: 5px;
+  }
+/*---------------NAV-------------------*/
+.menu {
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #261E1A;
+  text-decoration: none;
+  font-size: 21px;
+}
+
+a:hover {
+  color: #93C916;
+  font-size: 160%;
+}
+
+.nav-link {
+  padding: 15px;
+}
+
+/*----------------INTRO----------------*/
+.intro {
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-style: italic;
+}
+
+#jake-shake {
+  margin-top: 150px;
+}
+
+#headline {
+  color: #45660A;
+}
+
+#subline {
+  color: #7cba12;
+}
+/*----HOW-IT-WORK & CONCEPT--SECTION---*/
+#how-it-works, #concept{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding: 15px;
+  background-color: #93C916;
+  color: #004d00;
+}
+
+.text {
+  padding: 20px;
+}
+
+.photo {
+  padding: 20px;
+  position: center;
+ }
+
+#shake-pack {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+}
+
+#make-shake {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+}
+/*---------------VIDEO-----------------*/
+#jake-video {
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+  }
+
+iframe {
+  width: 600px;
+  height: 415px;
+}
+/*----------PRICING--SECTION-----------*/
+#pricing {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.shake-image {
+  width: 50%;
+  height: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80%;
+  margin: 30px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 10px #ccc;
+  background: linear-gradient(to right, #BAD63F 0%, #93C916 100%);
+  }
+
+.price-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+}
+ .type {
+  font-size: 25px;
+  color: white;
+  margin: 10px;
+}
+
+.desc {
+  color: white;
+  font-size: 16px;
+}
+
+.price {
+  color: #283314;
+  font-size: 18px;
+  border: 2px solid grey;
+  padding: 10px;
+  box-shadow: 0 1px 3px 1px grey;
+  background-color: #C9FF63;
+}
+
+.price:hover {
+  font-size: 160%;
+  color: #141707;
+}
+/*---------------COUPON----------------*/
+.discount {
+  font-size: 25px;
+  letter-spacing: 1.5px;
+}
+
+#email {
+  margin: 20px;
+  width: 25%;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.coupon {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 50px;
+ }
+
+#submit {
+  display: block;
+  margin: 0 auto;
+}
+/*--------------BUTTON-----------------*/
+.btn {
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: #93C916;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn--transition {
+  transition: 0.24s ease;
+}
+.btn-hover--transform-shadow:hover {
+  transform: translate(0,-8px);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.24);
+}
+/*---------------FOOTER----------------*/
+footer {
+  text-align: center;
+}
+
+.icon {
+  width: 30px;
+}
+
+footer p {
+  font-size: 15px;
+}
+
+@media screen and (max-width: 720px) {
+/*-----header-----*/
+  header {
+    align-items: center;
+    margin: 0 4px 0 0;
+  }
+
+  .logo {
+    padding: 5px;
+    width: 8px;
+    position: relative;
+  }
+  /*-----navigation-----*/
+  nav {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    padding: 0 50px;
+  }
+  .menu {
+    align-items: center;
+    width: 100%;
+    align-content: space-around;
+    text-align: left;
+  }
+
+  a {
+    font-size: 14px;
+  }
+
+  .intro {
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 60%;
+  }
+
+  #jake-shake {
+    margin-top: 80 px;
+    width: 300px;
+  }
+
+
+  #how-it-works {
+    flex-direction: column;
+  }
+
+  #concept {
+    flex-direction: column;
+  }
+
+  .text {
+    font-size: 14px;
+  }
+
+  iframe {
+    width: 400px;
+    height: 200px;
+  }
+
+  #pricing {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 70%;
+    height: 40%;
+    margin: 0 auto;
+    .box {
+      margin: 10px;
+      padding: 10px;
+
+      .type-of-shake-image {
+        margin-top: 10px;
+        width: 50px;
+        height: 100px;
+      }
+      .price-description {
+        text-align: center;
+        h2 {
+          margin-top: -20px;
+          font-size: 18px;
+        }
+        p{
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
